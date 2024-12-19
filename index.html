@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME1</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+   <div class="container">
+    <h1> Click the color game</h1>
+    <p>Target color : <span id="targetcolor"> red</span></p>
+    <p>Score : <span id="score">0</span> Time left : <span id="timer">2:00</span></p>
+    <div id="gamegrid">
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+  <!--  overlay -->
+
+  <div id="congratsoverlay" class="overlay">Congratulation! you win
+  <button  id="restartbutton" class="overlay-button"> Restart Game</button>
+ </div>
+
+ <div id="loseoverlay" class="lose-overlay">Unfortunately! you  lose
+    <button  id="restartbuttonlose" class="overlay-button"> Restart Game</button>
+   </div>
+
+
+<!-- Audio -->
+ <!-- background Music -->
+  <audio id="backgroundmusic" loop>
+  <source src="./background_music.mp3" type="audio/mpeg">
+
+  </audio>
+
+  <!-- win Music -->
+  <audio id="winmusic" >
+    <source src="./win.mp3" type="audio/mpeg">
+  
+    </audio>
+
+    <!-- lose Music -->
+  <audio id="losemusic" >
+    <source src="./you-lose-game-sound.mp3" type="audio/mpeg">
+  
+    </audio>
+
+    <!-- correct Music -->
+  <audio id="correctmusic" >
+    <source src="./correct.mp3" type="audio/mpeg">
+  
+    </audio>
+
+    <!-- Incorrect Music -->
+  <audio id="IncorrectMusic" >
+    <source src="./wrong-answer.mp3" type="audio/mpeg">
+  
+    </audio>
+
+   </div>
+
+ 
+   <script src="index.js"></script> 
+</body>
+</html>
